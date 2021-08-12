@@ -1,4 +1,4 @@
-FROM arm64v8/python:3.8
+FROM arm64v8/python:3.8-buster
 
 COPY . /build
 RUN cd /build && ls .git/ && pip install . && rm -rf /build
